@@ -1,0 +1,13 @@
+##User
+Library/
+Temp/
+pkg/
+obj/
+.idea/
+*.CSharp
+*.Editor
+*.Plugins
+*.sln
+*.csproj
+*.exe
+.DS_Store
