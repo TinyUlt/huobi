@@ -30,13 +30,13 @@ func GetUstdData(coinId string , tradeType ,page int)models.USDTReturn{
 	mapParams["range"] = "0"
 	mapParams["currentPage"] = "1"
 
-	jsonUSDTReturn := untils.HttpGetRequest("https://api-otc.huobi.pro/v1/otc/trade/list/public"  ,mapParams)
+	jsonUSDTReturn := untils.HttpGetRequest("https://otc-api.huobipro.com/v1/otc/trade/list/public"  ,mapParams)
 	json.Unmarshal([]byte(jsonUSDTReturn), &uSDTReturn)
 	return uSDTReturn
 }
 func GetMarketPrice() (string, string, string){
 	uSDTReturn := models.USDTPriceReturn{}
-	jsonUSDTReturn := untils.HttpGetRequest("https://api-otc.huobi.pro/v1/otc/base/market/price"  ,nil)
+	jsonUSDTReturn := untils.HttpGetRequest("https://otc-api.huobipro.com/v1/otc/base/market/price"  ,nil)
 	json.Unmarshal([]byte(jsonUSDTReturn), &uSDTReturn)
 
 	btcPrice:=GetPriceByCoinId(uSDTReturn.Data,1)

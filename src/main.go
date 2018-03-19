@@ -391,7 +391,7 @@ func main(){
 	for {
 		_, _,  usdtPriceStr= services.GetMarketPrice()
 
-		btcPrice:=services.GetTicker("btcusdt").Tick.Close
+		//btcPrice:=services.GetTicker("btcusdt").Tick.Close
 
 		//attachStr:=""
 		//if btcPrice > btcOldPrice{
@@ -401,7 +401,7 @@ func main(){
 		//
 		//}
 		//btcOldPrice = btcPrice
-		btcPriceStr =fmt.Sprintf("%.2f$",btcPrice)
+		//btcPriceStr =fmt.Sprintf("%.2f$",btcPrice)
 		traderData :=make(map[int][]models.USDTData)
 		traderData[0] = make([]models.USDTData,0)
 		traderData[1] = make([]models.USDTData,0)

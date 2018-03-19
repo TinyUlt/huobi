@@ -1,12 +1,12 @@
 {
 	"coinId":"2",
 	"tradeFollowStepEmail":["a@ultbtc.com"],
-	"tradeFollowSellEmail":["c@ultbtc.com"],
-	"tradeFollowBuyEmail":["b@ultbtc.com"],
+	"tradeFollowSellEmail":[],
+	"tradeFollowBuyEmail":[],
 	"step":0.009,
 	"personFollowName":"丹逅",
-	"personFollowSellEmail":["personfollowsell@ultbtc.com"],
-	"personFollowBuyEmail":["personfollowbuy@ultbtc.com"],
+	"personFollowSellEmail":[],
+	"personFollowBuyEmail":[],
 	"aveFollowSellEmail":[],
 	"aveFollowBuyEmail":[],
 	"pageCount":3
